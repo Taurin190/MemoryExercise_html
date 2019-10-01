@@ -217,17 +217,21 @@
                       </div>
                     </div>
                     <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="">回答タイプ</label>
-                      <div class="btn-group control-label col-md-6 col-sm-6 col-xs-12" data-toggle="buttons">
-                        <label class="btn btn-default">
-                          <input type="radio" name="options" id="option1"> Option 1
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">回答の種類 <span class="required">*</span>
                         </label>
-                        <label class="btn btn-default">
-                          <input type="radio" name="options" id="option2"> Option 2
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <select class="form-control">
+                        <option>Short ansert</option>
+                        <option>Paragraph</option>
+                        <option>Multiple choice</option>
+                      </select>
+                      </div>
+                    </div>
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="textarea">回答 <span class="required">*</span>
                         </label>
-                        <label class="btn btn-default active">
-                          <input type="radio" name="options" id="option3"> Option 3
-                        </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="text" class="form-control col-md-6 col-xs-12" placeholder="答えを記入して下さい">
                       </div>
                     </div>
                     <div class="item form-group">
@@ -237,8 +241,27 @@
                         <textarea id="textarea" required="required" name="textarea" class="form-control col-md-7 col-xs-12"></textarea>
                       </div>
                     </div>
+                    <div class="form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="textarea">回答 <span class="required">*</span>
+                        </label>
+
+                      <div class="col-md-9 col-sm-9 col-xs-12">
+                        <div class="radio">
+                          <label class="">
+                              <div class="iradio_flat-green checked" style="position: relative;"><input type="radio" class="flat" checked="" name="iCheck" style="position: absolute; opacity: 10;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> Checked
+                            </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                              <div class="iradio_flat-green" style="position: relative;"><input type="radio" class="flat" name="iCheck" style="position: absolute; opacity: 10;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div> Unchecked
+                            </label>
+                        </div>
+                      </div>
+                    </div>
+
+
                     <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12">Input Tags</label>
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12">Categories</label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
                         <input id="tags_1" type="text" class="tags form-control" value="social, adverts, sales" data-tagsinput-init="true" style="display: none;">
                         <div id="tags_1_tagsinput" class="tagsinput" style="width: auto; min-height: 100px; height: 100px;">
@@ -252,10 +275,10 @@
                       </div>
                     </div>
                     <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="website">参考 URL <span class="required">*</span>
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="website">参考 URL
                         </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="url" id="website" name="website" required="required" placeholder="www.website.com" class="form-control col-md-7 col-xs-12">
+                        <input type="url" id="website" name="website" placeholder="www.website.com" class="form-control col-md-7 col-xs-12">
                       </div>
                     </div>
                     <div class="ln_solid"></div>
